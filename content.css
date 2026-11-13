@@ -1,0 +1,50 @@
+@media (min-height: 650px) {
+  .sg-sticky-unclip {
+    overflow: visible !important;
+  }
+
+  .sg-sticky-files,
+  .sg-sticky-comment-heading,
+  .sg-sticky-comments {
+    position: sticky !important;
+    z-index: 10;
+    background-color: var(--bcbackground-0, Canvas) !important;
+  }
+
+  .sg-sticky-files {
+    top: 0;
+    max-height: 25vh;
+    overflow-y: auto;
+    border-bottom: 1px solid #8d959f;
+  }
+
+  .sg-sticky-comment-heading {
+    bottom: var(--sg-comments-height, 0px);
+    display: block !important;
+    width: 100%;
+    box-sizing: border-box;
+    isolation: isolate;
+  }
+
+  .sg-sticky-comment-heading::before {
+    content: "";
+    position: absolute;
+    inset-block: 0;
+    inset-inline: -100vw;
+    z-index: -1;
+    pointer-events: none;
+    background-color: var(--bcbackground-0, Canvas);
+    border-top: 1px solid #8d959f;
+  }
+
+  .sg-sticky-comments {
+    bottom: 0;
+    max-height: 36vh;
+    overflow-y: auto;
+  }
+
+  .sg-sticky-comments .tox.tox-tinymce,
+  .sg-sticky-comments .rce-wrapper textarea {
+    height: 160px !important;
+  }
+}

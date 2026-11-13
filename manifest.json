@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Canvas SpeedGrader Sticky Panels",
+  "version": "0.1.0",
+  "description": "Keep submission files and comments visible while grading a long rubric.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.instructure.com/*"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
