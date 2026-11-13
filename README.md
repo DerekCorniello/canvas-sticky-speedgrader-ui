@@ -13,6 +13,8 @@ Reload an open SpeedGrader tab after installing. The layout activates when the m
 
 ## Check the layout
 
-Open a submitted assignment with multiple file links and a long rubric. Scroll the grading pane and verify that the file links remain at the top while the comment editor and Submit Comment button remain at the bottom. Switch students and repeat. The supplied sample was a no-submission page, so the submitted-file case still needs a live check.
+Open a submitted assignment with multiple file links and a long rubric. Scroll the grading pane and verify that the file links remain at the top while the comment editor and Submit Comment button remain at the bottom. Switch students and repeat. The layout has been checked in Zen and Chromium.
+
+The extension icon is in `icons/`. `source.svg` is the editable original; the PNG files are referenced by `manifest.json` and included in store packages.
 
 Run `npm run lint`, `npm run format:check`, and `npm test` for the local checks. No install step or build is needed.
